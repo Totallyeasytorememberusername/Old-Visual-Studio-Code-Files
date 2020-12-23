@@ -26,35 +26,83 @@ b.hideturtle()
 
 #it's the logo; a buttcheek.
 
-# print("Welcome to Hangman with GUILLOTINES! This is just the same game but there are some images of a guy trying to avoid getting his head chopped off.    ")
-# print("                  __                                                                                                                                ")
-# print(" Hi!             |\ |     Next!                                                                                                                     ")
-# print("  \              | \|       /                                                                                                                       ")
-# print("  ()             |  |   \()          ________                                                                                                       ")
-# print(" /||\            |__|    ||\        |Head Bin|                                                                                                      ")
-# print("  /\             ||||    /\         |________|                                                                                                      ")
-# print("----------------------------------------------------------------------------------------------------------------------------------------------------")
-# print("Instructions: You got to protect yourself! This is the Rule of Terror in the French Revolution and you are the king...                              ")
-# print("----------------------------------------------------------------------------------------------------------------------------------------------------")
+# print("Welcome to Hangman with GUILLOTINES! This is just the same game but there are some images of a guy trying to avoid getting his head chopped off.     ")
+# print("                  __                                                                                                                                 ")
+# print(" Hi!             |\ |     Next!                                                                                                                      ")
+# print("  \              || |       /                                                                                                                        ")
+# print("  ()             |()|_  \()          ________                                                                                                        ")
+# print(" /||\          __|__|__  ||\        |Head Bin|                                                                                                       ")
+# print("  /\          |||||||||| /\         |________|                                                                                                       ")
+# print("-----------------------------------------------------------------------------------------------------------------------------------------------------")
+# print("Instructions: You got to protect yourself! This is the Salem With Trials and you are known as one with the gift of the dark arts...                  ")
+# print("-----------------------------------------------------------------------------------------------------------------------------------------------------")
 
-# print("Who are ya gonna  __                                                                                                                                ")
-# print("kill today?      |\ |    Hmmm... It says some king.                                                                                                 ")
-# print("     /           | \|     /                                                                                                                         ")
-# print("  ()             |  |    ()  _       ________                                                                                                       ")
-# print(" /||\            |__|   /||\|_|     |Head Bin|                                                                                                      ")
-# print("  /\             ||||    /\         |________|                                                                                                      ")
-# print("----------------------------------------------------------------------------------------------------------------------------------------------------")
-# print("Instructions: Guess the word your friend put in.                                                                                                    ")
-# print("----------------------------------------------------------------------------------------------------------------------------------------------------")
-# print("Executioneer: Next!                                                                                                                                 ")
-# print("You: Hi Executioner! Who are you going to kill today?                                                                                               ")
-# print("Executioneer: Hmm... let me check. It says some king; King Louis XVI, I think.                                                                      ")
-# print("You: But that's me!                                                                                                                                 ")
+# print("                    __                                                                                                                                ")
+# print("Who ya kill today? |\ |    Hmmm... It says some witch.                                                                                                ")
+# print("     /             || |     /                                                                                                                         ")
+# print("  ()               |()|_   ()  _      ________                                                                                                        ")
+# print(" /||\            __|__|__ /||\|_|    |Head Bin|                                                                                                       ")
+# print("  /\            |||||||||| /\        |________|                                                                                                       ")
+# print("------------------------------------------------------------------------------------------------------------------------------------------------------")
+# print("Instructions: Guess the word your friend put in.                                                                                                      ")
+# print("------------------------------------------------------------------------------------------------------------------------------------------------------")
+# print("Executioneer: Next!                                                                                                                                   ")
+# print("You: Hi Executioner! Who are you going to kill today?                                                                                                 ")
+# print("Executioneer: Hmm... let me check. It says some old 'witch', I think. Lives by another witch's house, ate children, stuff like that. I'm not literate.")
+# print("You: But that's me!                                                                                                                                   ")
 
-#A stickman test. On the side is a guillotine.
+#A stickman test. On the side is a hanging platform.
 
-input("Welcome to the game of Hangman: Guillotines! You are the 1st player, the one that creates the words.")
+print("(c)* Buttcheek Coding AB.")   
+print("*(c) stands for 'created by' not 'copyright'.")
+print("A Python Test Game")
+print("Game2")
+input("Loading Game...(Press Enter to Continue)")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("     .    .   ____   .    .   _____  .        .   ____   .    .     ")
+print("     |    |  /    \  |\   |  /       |\      /|  /    \  |\   |     ")
+print("     |____|  |____|  | \  |  |    _  | \    / |  |____|  | \  |     ")
+print("     |    |  |    |  |  \ |  |    |  |  \  /  |  |    |  |  \ |     ")
+print("     |    |  |    |  |   \|  \____|  |   \/   |  |    |  |   \|     ")
+print("     S             A              L             E             M     ")
+input("-----------------------Press Enter to Continue----------------------")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+
+input("Welcome to the game of Hangman: Salem! You are the 1st player, the one that creates the words.")
 User_input = input("So input your word here: ")
+
+if len(User_input) >= 25:
+    print("Words with over 25 characters are too large for a casual game.")
+    while len(User_input) >= 25:
+        User_input = input("So input your NEW word here: ")
 
 #The User Input
 
@@ -268,30 +316,35 @@ while word_not_guessed:
 
 #Section 5
 
+    Apple_Pen_pg2 = []
+
+    previous_guesses = []
+
     # to check correct answers
     for letter in User_input:
         if letter in TMZ:
             stars_list[index] = letter
-            
+
         index += 1
-    # for letter in User_input: 
-    #     #global leter
-    #     leter = letter
-    #     if letter in TMZ:
-    #         if letter not in Apple_Pen_pg2:
-    #             stars_list[index] = letter
-    #             Pigs = Pigs + 1
-    #     index += 1
+    index = 0
+    for letter in User_input:
+        #global leter
+        leter = letter
+        if letter in TMZ:
+            if letter not in Apple_Pen_pg2:
+                stars_list[index] = letter
+                Pigs = Pigs + 1
+        index += 1
     
     # to check wrong answers
 
 
-    # Apple_Pen_pg2 += leter
-    # for letters in TMZ:
-    #     if letters not in User_input:
-    #         if letters not in previous_guesses:
-    #             previous_guesses += letters
-    #             Pigs = Pigs - 1
+    Apple_Pen_pg2 += leter
+    for letters in TMZ:
+        if letters not in User_input:
+            if letters not in previous_guesses:
+                previous_guesses += letters
+                Pigs = Pigs - 1
     for ZUES in stars_list:
        if ZUES == "*": 
            count = count + 1
@@ -305,10 +358,46 @@ print("~")
 
 (
 #Needed Addition: We need to add some more stuff to make this a game.
-# ^ Addition: Be able to make the person DIE! -1 per wrong guess +1 for a right one +3 for one with more than 1 letter right -3 for one guessed wrong multiple times -1 for one guessed right multiple times. Start at +10.
-#   ^ Addition: Add pictures and sentences with each choice.
-#You can get hints on a phrase. 3 of them. You get a random letter that is correct. Type in I WANT A HINT to get one. Make sure to list how to get one in the beginning.
-#Issue of Global
+#Addition: Add pictures and sentences with each choice ~IN PROGRESS.
 )
 
-#Future Challenge: Create a turtle that can show you the Minecraft (C) Logo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Apple_Pen_pg2 has never existed as a variable therefore the computer cannot read it. It has disappeared into thin air.
+
+#Fix Lives Program
+
+
+# #Future Challenge: Create a turtle that can show you the Minecraft (C) Logo.
+
+# Traceback (most recent call last):
+#   File "c:/Users/Sylvan Student/Desktop/Old-Visual-Studio-Code-Files/Hangman.py", line 332, in <module>
+#     stars_list[index] = letter
+# IndexError: list assignment index out of range
+
+#Latest Update:
+#Added Title Screen
+#Changed What was it? Oh yeah the Time of interest from Rule of Terror to Salem Witch Trials
+#Put extra credits in beginning of game

@@ -25,14 +25,89 @@ style = ('Helvetica', 30,)
 a.write('Buttcheek Coding', font=style, align='center')
 a.hideturtle()
 
+print("(c)* Buttcheek Coding AB.")   
+print("*(c) stands for 'created by' not 'copyright'.")
+print("A Python Test Game")
+print("Game1")
+input("Loading Game...(Press Enter to Continue)")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("      ______  .     .   ______   ______    ______    ______     ______                \    /             ")
+print("     /        |     |  |        |         |         /      \   |      \                \  /              ")
+print("     |    __  |     |  |______  |______   |______   |      |   |______/   --------------><-------------- ")
+print("     |     |  |     |  |               |         |  |      |   |    \                  /  \              ")
+print("     \_____|  \_____/  |______   ______|   ______|  \______/   |     \                /    \             ")
+input("-------------------------------------- Press any Key to Continue ----------------------------------------")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("Instructions:")
+print("")
+print("Guess a number in between 1 to 100.")
+print("That's it!")
+print("")
+input("      -Press Enter to Continue-                                                                                                          ")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+
+#distance = 10 lines
+
 secret = float(randint(1, 100))
 
 number_is_digit = False
 
+start_life = 10
+
 while not number_is_digit:
+	print("Lives: ", start_life)
 	guess = input("What number will you guess? ")
 	guess = guess.strip()
 
+	if guess != secret:
+		start_life = start_life - 1
+
+	if start_life == 0:
+		print("GAME OVER")
+		break
+	
 	if guess == "":
 		pass
 	elif guess == "KKHTech":
@@ -71,4 +146,5 @@ while not number_is_digit:
 			print("This type of input is not valid. So...")
 			print("--------------------------------------")
 
-#You can get hints on a number.
+
+("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
